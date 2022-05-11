@@ -1,0 +1,4 @@
+##contig=<ID=A4,length=169462309>
+##contig=<ID=A1,length=466608795>
+##contig=<ID=A2,length=320540106>
+##contig=<ID=X_NeoX,length=485382361>
