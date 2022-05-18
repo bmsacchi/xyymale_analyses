@@ -19,8 +19,7 @@ tags
 [._]*.un~
 
 ## ignore data directory LOL
-data/
-
+data/*
 scripts/*.vcf
 scripts/*.out
 scripts/*log*
