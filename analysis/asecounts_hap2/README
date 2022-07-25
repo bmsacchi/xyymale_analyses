@@ -1,0 +1,2 @@
+# poking around in IGV reveals sites that are heterozygoes in the TX male gDNA but homozygous in the accompanying RNA data for the same individual. This is suggestive of some kinda silencing. unfortch some of the genes involved haven't lifted over so i don't really know the accompanying gene for the other anno in hap1... anyway that comes later! First thing is to use ASE readcoutner or samtools pileup to count how RNA reads mapping to known het sites in the DNA! woo
+

@@ -1,0 +1,2 @@
+[1]+ 26584 Running                 nohup ./compmap_as_is.sh &
+[1]+ 26901 Running                 nohup ./compmap_as_is.sh &

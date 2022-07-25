@@ -1,0 +1,5 @@
+bioawk -c vcf 'split ($10,b,":") split ($11,c,":") split ($12,d,":") split ($13,e,":") split ($14,f,":") split ($15,g,":") split ($16,h,":") split ($17,i,":") split ($18,j,":") split ($19,k,":") split ($20,l,":") split ($21,m,":")  {print $1 " " $2 " " $3 " " $4 " " $5 " " $6 " " b[4] " " c[4] " " d[4] " " e[4] " " f[4] " " g[4] " " h[4] " " i[4] " " j[4] " " k[4] " " l[4] " " m[4] " " }' ../data/vcfs_transcriptomes/poptranscripts_vars_hap2malexyy_sort.vcf > ../data/vcfs_transcriptomes/ad_nc_hap2.txt
+
+awk 'split ($7,a,",") split ($8,b,",") split ($9,c,",") split ($10,d,",") split ($11,e,",") split ($12,f,",") split ($13,g,",") split ($14,h,",") split ($15,i,",") split ($16,j,",") split ($17,k,",") split ($18,l,",") {print $1 " "  $2 " "  $3 " " $4 " " $5 " " $6 " " a[1]+b[1]+c[1]+d[1]+e[1]+f[1] " " a[2]+b[2]+c[2]+d[2]+e[2]+f[2] " " g[1]+h[1]+i[1]+j[1]+k[1]+l[1] " " g[2]+h[2]+i[2]+j[2]+k[2]+l[2] }' ../data/vcfs_transcriptomes/ad_nc_hap2.txt > ../data/vcfs_transcriptomes/ad_nc_hap2_fmadd.txt
+#last four columns are ref AD summed across females, alt AD summed across females, ref AD males, alt AD males
+
